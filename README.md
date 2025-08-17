@@ -1,11 +1,11 @@
 <div align="center">
 
-<h1 style="font-family:monospace; color:#FFD700; font-size:42px;">
+<h1 style="font-family:monospace; color:#FFD700; font-size:48px; text-shadow: 2px 2px #ff8c00;">
 💰 Gold Price Tracker
 </h1>
 
 <p style="font-family:monospace; font-size:18px; color:#ffe599;">
-Easily get the current gold price in Iran with this Python script 🚀
+Track the current gold price in Iran instantly 🚀
 </p>
 
 </div>
@@ -14,9 +14,12 @@ Easily get the current gold price in Iran with this Python script 🚀
 
 ## Sample Code (main.py)
 
-<div style="background:#1e1e1e; color:#d4d4d4; border-radius:10px; padding:20px; overflow-x:auto; font-family:monospace; font-size:14px; line-height:1.5;">
+<div style="position:relative; background:#1e1e1e; border-radius:12px; overflow:hidden; font-family:monospace; font-size:14px; line-height:1.6; color:#d4d4d4; padding:20px; margin:20px 0;">
 
-<pre>
+  <!-- Animated top line -->
+  <div style="position:absolute; top:0; left:0; height:4px; width:100%; background: linear-gradient(90deg, #FFD700, #FFA500, #FFD700); animation: slide 2s linear infinite;"></div>
+
+  <pre style="margin:0; padding-top:10px;">
 import requests
 from bs4 import BeautifulSoup
 import re
@@ -37,14 +40,14 @@ for h3 in soup.find_all("h3"):
         else:
             print(" نرخ پیدا نشد داخل متن:", text)
         break
-</pre>
+  </pre>
 </div>
 
 ---
 
 ## 🛠 Installation / Setup
 
-<div style="background:#f0f0f0; border-radius:10px; padding:20px; font-family:monospace; font-size:14px; line-height:1.5;">
+<div style="background: linear-gradient(135deg, #333, #555); border-radius:12px; padding:20px; font-family:monospace; font-size:14px; color:#fff; line-height:1.6; box-shadow: 0 5px 15px rgba(0,0,0,0.3); margin:20px 0;">
 Clone the repository and run the script:
 
 <pre>
@@ -54,27 +57,9 @@ python main.py
 </pre>
 </div>
 
----
-
-## Download
-
-<div style="display:flex; justify-content:center; margin:20px 0;">
-  <a href="https://github.com/SoBiMoqadam/Gold-Price/raw/main/main.py" 
-     download
-     style="
-        padding:12px 30px;
-        font-size:16px;
-        font-weight:bold;
-        color:white;
-        text-decoration:none;
-        border-radius:8px;
-        background: linear-gradient(135deg, #FFD700, #FFA500);
-        box-shadow: 0 5px 15px rgba(0,0,0,0.3);
-        transition: transform 0.2s, box-shadow 0.2s;
-     "
-     onmouseover="this.style.transform='translateY(-3px)'; this.style.boxShadow='0 10px 20px rgba(0,0,0,0.4)';"
-     onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 5px 15px rgba(0,0,0,0.3)';"
-  >
-      ⬇️ Download main.py
-  </a>
-</div>
+<style>
+@keyframes slide {
+  0% {background-position: 0 0;}
+  100% {background-position: 200% 0;}
+}
+</style>
