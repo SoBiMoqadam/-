@@ -12,7 +12,7 @@ Fetch the current 18K gold price in Iran instantly using Python 🚀
 
 ---
 
-## About
+## 📝 About
 
 This script scrapes the **current 18K gold price** from [TGJU](https://www.tgju.org/profile/geram18) and prints it in the console.  
 Perfect for learning web scraping with Python and keeping track of live gold rates.
@@ -25,9 +25,7 @@ Perfect for learning web scraping with Python and keeping track of live gold rat
 
 ---
 
-## Sample Code
-
-Here's a snippet of the script:
+## 📄 Sample Code
 
 ```python
 import requests
